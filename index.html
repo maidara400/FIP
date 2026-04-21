@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<title>Sénégal Open Padel — Inscription Officielle</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="app">
+
+  <form id="registrationForm" onsubmit="return false;">
+    
+    <header class="hdr">
+      <div class="fip-badge">FIP</div>
+      <div>
+        <div class="hdr-title"><span style="color:var(--gold)">Sénégal Open</span> Padel</div>
+        <div class="hdr-sub">17 Avr 2026 · Dakar · FIP Certified</div>
+      </div>
+      <span class="hdr-flag">🇸🇳</span>
+    </header>
+
+    <div class="step-bar">
+      <div class="step-track">
+        <div class="s-dot active" id="d1"><div class="s-circle" id="dc1">1</div><div class="s-name">Vous</div></div>
+        <div class="s-line" id="l1"></div>
+        <div class="s-dot" id="d2"><div class="s-circle" id="dc2">2</div><div class="s-name">Binôme</div></div>
+        <div class="s-line" id="l2"></div>
+        <div class="s-dot" id="d3"><div class="s-circle" id="dc3">3</div><div class="s-name">Tournoi</div></div>
+        <div class="s-line" id="l3"></div>
+        <div class="s-dot" id="d4"><div class="s-circle" id="dc4">4</div><div class="s-name">Confirm.</div></div>
+      </div>
+    </div>
+
+    <div class="step-body" id="step-body">
+      <div class="step-inner">
+
+        <div class="step-view active" id="step-1">
+          <div class="step-heading">
+            <div class="urgency">Places limitées · 64 équipes</div>
+            <h2>Votre <span style="color:var(--gold)">profil</span></h2>
+            <p>Vous représentez officiellement l'équipe. Ces données figurent sur tous les supports FIP.</p>
+          </div>
+          <div class="card">
+            <div class="card-pad">
+              <div class="row-2">
+                <div class="fg"><label>Prénom <span class="req">*</span></label><input type="text" id="p1_prenom" name="p1_prenom" required placeholder="Rafael"/><div class="err-msg" id="e-p1_prenom">Requis</div></div>
+                <div class="fg"><label>Nom <span class="req">*</span></label><input type="text" id="p1_nom" name="p1_nom" required placeholder="Nadal"/><div class="err-msg" id="e-p1_nom">Requis</div></div>
+              </div>
+              <div class="row-2">
+                <div class="fg"><label>Email <span class="req">*</span></label><input type="email" id="p1_email" name="p1_email" required placeholder="vous@email.com"/><div class="err-msg" id="e-p1_email">Email invalide</div></div>
+                <div class="fg"><label>Téléphone <span class="req">*</span></label><input type="tel" id="p1_tel" name="p1_tel" required placeholder="+221 77 000 00 00"/><div class="err-msg" id="e-p1_tel">Requis</div></div>
+              </div>
+              
+              <div class="row-2">
+                <div class="fg"><label>Date de naissance <span class="req">*</span></label><input type="date" id="p1_ddn" name="p1_ddn" required/><div class="err-msg" id="e-p1_ddn">Requis</div></div>
+                <div class="fg"><label>Licence FIP <span class="req">*</span></label><input type="text" id="p1_licence" name="p1_licence" required placeholder="ex: FIP123456"/><div class="err-msg" id="e-p1_licence">Requis</div></div>
+              </div>
+
+              <div class="row-2-3">
+                <div class="fg"><label>Nationalité <span class="req">*</span></label><div class="sel-wrap"><select id="p1_nat" name="p1_nat" required><option value="">— Pays —</option></select></div><div class="err-msg" id="e-p1_nat">Requis</div></div>
+                <div class="fg"><label>Classement FIP <span class="req">*</span></label><input type="number" id="p1_rank" name="p1_rank" required placeholder="ex: 850" min="1" max="9999"/><div class="err-msg" id="e-p1_rank">Requis</div></div>
+              </div>
+              <div class="row-2-3">
+                <div class="fg"><label>Passeport / CNI <span class="req">*</span></label><input type="text" id="p1_passport" name="p1_passport" required placeholder="AB123456"/><div class="err-msg" id="e-p1_passport">Requis</div></div>
+                <div class="fg"><label>Point FIP <span class="req">*</span></label><input type="number" id="p1_points" name="p1_points" required placeholder="ex: 850" min="0" max="9999"/><div class="err-msg" id="e-p1_points">Requis</div></div>
+              </div>
+              <div class="divider"><span>Catégorie</span></div>
+              <div class="fg">
+                <div class="r-group">
+                  <label class="r-card"><input type="radio" name="cat" value="Masculin" required/><div class="r-label"><span class="ico">♂️</span>Masc.</div></label>
+                  <label class="r-card"><input type="radio" name="cat" value="Féminin"/><div class="r-label"><span class="ico">♀️</span>Fém.</div></label>
+                  <label class="r-card"><input type="radio" name="cat" value="Mixte"/><div class="r-label"><span class="ico">⚡</span>Mixte</div></label>
+                  <label class="r-card"><input type="radio" name="cat" value="Vétérans +45"/><div class="r-label"><span class="ico">🥇</span>+45 ans</div></label>
+                </div>
+                <div class="err-msg" id="e-cat">Sélectionnez une catégorie</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-view" id="step-2">
+          <div class="step-heading">
+            <h2>Votre <span style="color:var(--gold)">binôme</span></h2>
+            <p>Votre partenaire. Ensemble vous formez une équipe officielle — son accord est requis.</p>
+          </div>
+          <div class="partner-box">
+            <div class="partner-tag">PARTENAIRE</div>
+            <div style="height:5px"></div>
+            <div class="row-2">
+              <div class="fg"><label>Prénom <span class="req">*</span></label><input type="text" id="p2_prenom" name="p2_prenom" required placeholder="Fernando"/><div class="err-msg" id="e-p2_prenom">Requis</div></div>
+              <div class="fg"><label>Nom <span class="req">*</span></label><input type="text" id="p2_nom" name="p2_nom" required placeholder="Belasteguín"/><div class="err-msg" id="e-p2_nom">Requis</div></div>
+            </div>
+            <div class="row-2">
+              <div class="fg"><label>Email <span class="req">*</span></label><input type="email" id="p2_email" name="p2_email" required placeholder="partenaire@email.com"/><div class="err-msg" id="e-p2_email">Email invalide</div></div>
+              <div class="fg"><label>Nationalité <span class="req">*</span></label><div class="sel-wrap"><select id="p2_nat" name="p2_nat" required><option value="">— Pays —</option></select></div><div class="err-msg" id="e-p2_nat">Requis</div></div>
+            </div>
+
+            <div class="row-2">
+              <div class="fg"><label>Date de naissance <span class="req">*</span></label><input type="date" id="p2_ddn" name="p2_ddn" required/><div class="err-msg" id="e-p2_ddn">Requis</div></div>
+              <div class="fg"><label>Licence FIP <span class="req">*</span></label><input type="text" id="p2_licence" name="p2_licence" required placeholder="ex: FIP789012"/><div class="err-msg" id="e-p2_licence">Requis</div></div>
+            </div>
+              <div class="row-2">
+              <div class="fg"><label>Telephone <span class="req">*</span></label><input type="tel" id="p2_telephone" name="p2_telephone" required/><div class="err-msg" id="e-p2_telephone">Requis</div></div>
+              <div class="fg"><label>Point FIP <span class="req">*</span></label><input type="number" id="p2_points" name="p2_points" required placeholder="ex: 850" min="0" max="9999"/><div class="err-msg" id="e-p2_points">Requis</div></div>
+            </div>
+
+            <div class="row-2-3">
+              <div class="fg"><label>Passeport / CNI <span class="req">*</span></label><input type="text" id="p2_passport" name="p2_passport" required placeholder="CD789012"/><div class="err-msg" id="e-p2_passport">Requis</div></div>
+              <div class="fg"><label>Classement FIP <span class="req">*</span></label><input type="number" id="p2_rank" name="p2_rank" required placeholder="ex: 1100" min="1" max="9999"/><div class="err-msg" id="e-p2_rank">Requis</div></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-pad">
+              <div class="divider" style="margin-top:4px"><span>Votre équipe</span></div>
+              <div class="fg"><label>Nom de l'équipe <span class="req">*</span></label><input type="text" id="team_name" name="team_name" required placeholder="Dakar Warriors, Africa Kings…"/><div class="err-msg" id="e-team_name">Requis</div></div>
+              <div class="fg" style="margin-bottom:0"><label>Pays représenté <span class="req">*</span></label><div class="sel-wrap"><select id="team_pays" name="team_pays" required><option value="">— Pays —</option></select></div><div class="err-msg" id="e-team_pays">Requis</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-view" id="step-3">
+          <div class="step-heading">
+            <h2>Votre <span style="color:var(--gold)">tournoi</span></h2>
+            <p>Choisissez votre tableau et organisez votre venue. Dakar vous attend.</p>
+          </div>
+          <div class="card">
+            <div class="card-pad">
+              <div class="divider" style="margin-top:0"><span>Tableau souhaité</span></div>
+              <div class="fg">
+                <div class="r-group-3">
+                  <label class="r-card"><input type="radio" name="tab" value="Open" required/><div class="r-label"><span class="ico">🏅</span>Open<small style="display:block;font-size:8px;color:var(--muted);font-weight:400">Élite</small></div></label>
+                  <label class="r-card"><input type="radio" name="tab" value="Tableau A"/><div class="r-label"><span class="ico">🥈</span>Tableau A<small style="display:block;font-size:8px;color:var(--muted);font-weight:400">500–1000</small></div></label>
+                  <label class="r-card"><input type="radio" name="tab" value="Tableau B"/><div class="r-label"><span class="ico">🥉</span>Tableau B<small style="display:block;font-size:8px;color:var(--muted);font-weight:400">> 1000</small></div></label>
+                </div>
+                <div class="err-msg" id="e-tab">Sélectionnez un tableau</div>
+              </div>
+              <div class="divider"><span>Logistique</span></div>
+              <div class="row-2">
+                <div class="fg"><label>Arrivée prévue</label><input type="date" id="d_arrivee" name="d_arrivee"/></div>
+                <div class="fg"><label>Départ prévue</label><input type="date" id="d_depart" name="d_depart"/></div>
+              </div>
+              <div class="row-2">
+                <div class="fg"><label>Hébergement</label><div class="sel-wrap"><select id="heberg" name="heberg"><option value="Non">Autonome</option><option value="Hotel chambre double">Hôtel double</option><option value="Hotel 2 chambres">Hôtel séparé</option><option value="Airbnb recommandé">Airbnb</option></select></div></div>
+                <div class="fg"><label>Transfert aéroport</label><div class="sel-wrap"><select id="transfert" name="transfert"><option value="Non">Non</option><option value="Aller">Aller</option><option value="Aller-retour">Aller-retour</option></select></div></div>
+              </div>
+              <div class="fg" style="margin-bottom:0"><label>Régime alimentaire</label><div class="sel-wrap"><select id="food" name="food"><option value="Standard">Standard</option><option value="Halal">Halal</option><option value="Végétarien">Végétarien</option><option value="Végétalien">Végétalien</option><option value="Sans gluten">Sans gluten</option></select></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-view" id="step-4">
+          <div class="step-heading">
+            <h2>Tout est <span style="color:var(--gold)">prêt ?</span></h2>
+            <p>Vérifiez, puis confirmez. Votre équipe entre dans l'histoire du padel africain.</p>
+          </div>
+          <div class="sum-block"><div class="sum-title" style="color:var(--gold)">Joueur principal</div><div id="sum-p1"></div></div>
+          <div class="sum-block"><div class="sum-title" style="color:var(--green-bright)">Binôme</div><div id="sum-p2"></div></div>
+          <div class="sum-block"><div class="sum-title" style="color:var(--muted)">Équipe & Tournoi</div><div id="sum-team"></div></div>
+          <div style="margin-top:12px">
+            <div class="chk-row"><input type="checkbox" id="ck1" name="ck1" required/><span>J'accepte le <a href="#" style="color:var(--gold)">règlement officiel FIP</a> et les conditions de participation. <span style="color:var(--gold)">*</span></span></div>
+            <div class="chk-row"><input type="checkbox" id="ck2" name="ck2" required/><span>Je certifie que les informations sont exactes et que mon binôme a donné son accord. <span style="color:var(--gold)">*</span></span></div>
+            <div class="chk-row"><input type="checkbox" id="ck3" name="ck3"/><span class="dim">J'accepte de recevoir les communications officielles du tournoi.</span></div>
+            <div class="err-msg" id="e-ck">Veuillez accepter les conditions obligatoires.</div>
+          </div>
+        </div>
+
+        <div style="height:6px"></div>
+      </div>
+    </div>
+
+    <div class="nav-bar" id="nav-bar">
+      <div class="progress-thin" id="progress-bar" style="width:25%"></div>
+      <button type="button" class="btn-back" id="btn-back" onclick="prevStep()" style="visibility:hidden">← Retour</button>
+      <div class="step-count" id="step-count">Étape 1 / 4</div>
+      <button type="button" class="btn-main" id="btn-next" onclick="nextStep()">Continuer →</button>
+    </div>
+  </form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
